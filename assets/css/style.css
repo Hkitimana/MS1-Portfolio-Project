@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+
 /*------------------------------------------------Header-----------*/
 
 header {
@@ -9,8 +10,8 @@ header {
 
 /*------------------------------------------------Navbar-----------*/
 
-.navbar-color {
-    background-color: none;
+.nav-items {
+    color: #353030;
 }
 
 .my-name {
@@ -23,23 +24,6 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-    text-align: center;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 1rem;
-    display: block;
-    
-}
-
-.navbar-links li:hover {
-    background-color: #72e7ed;
 }
 
 .toggle-button {
@@ -152,34 +136,31 @@ header {
 
 /*------------------------------------------------Projects-----------*/
 
-#project-image{
-  height: 100%;
-  width: 100vh;
+.project-image{
+  height: 50vh;
+  width: 100vw;
 
 
   animation-name: hero-zoom;
   animation-duration: 5s;
   animation-fill-mode: forwards;
 } 
- 
-#hero-outer{
-  height: 600px;
-  width: 100vh;
-  overflow: hidden;
-  position: relative;
-}
 
-.col-sm {
+.col-md {
     padding: 5px 5px 5px;
 }
 
 .card-body {
-    background-color: #72e7ed;
+    background-color: #c6c9c9;
 }
 
 .card-img-top {
-    width: 150px;
+    width: 200px;
     height: 150px;
+}
+
+.bg-color-projects {
+    background-color: #c7d4d4;ß
 }
 
 
@@ -241,5 +222,5 @@ footer {
 }
 
 .bg-color-contact {
-    background-color: #7b7e7e;
+    background-color: #c7d4d4;
 }
