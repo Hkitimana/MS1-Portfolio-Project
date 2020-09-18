@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap");
 
 
 /*------------------------------------------------Header-----------*/
@@ -10,8 +10,14 @@ header {
 
 /*------------------------------------------------Navbar-----------*/
 
-.nav-items {
-    color: #353030;
+.menu-bar {
+    color: #fff;
+    padding: 7px 10px;
+    background-color: #5eaab8;
+}
+
+.nav-link:hover {
+    color: #fff !important;
 }
 
 .my-name {
@@ -24,6 +30,14 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Delius Swash Caps", sans-serif;
+    letter-spacing: 1px;
+    padding-left: 0px;
 }
 
 .toggle-button {
@@ -49,15 +63,10 @@ header {
         display: flex;
     }
 
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
 
     .navbar-links ul {
         width: 100%;
@@ -96,11 +105,39 @@ header {
     font-size: 400%;
     font-weight: 700;
     font-family: "Pacifico", sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    animation: button 3s 1;
+}
+
+.landing-text h3 {
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.button {
+    letter-spacing: 2px;
+}
+
+@keyframes button {
+    0% {
+        margin-bottom: -40px;
+    }
+    50% {
+        letter-spacing: 20px;
+        margin-bottom: -40px;
+    }
+    100% {
+        letter-spacing: 8px;
+        margin-bottom: -20px;
+
+    }
 }
 /*------------------------------------------------About-----------*/
 
 .row {
-    padding: 20px 0;
+    padding: 20px 0
+    
 }
 
 .uppercase {
@@ -108,8 +145,8 @@ header {
 }
 
 .about-heading {
-    margin: 0;
-    padding: 0;
+    margin-top: 50px;
+    padding: 0.5rem;
     font-size: 1.5rem;
     color: #545254;
     
@@ -122,16 +159,31 @@ header {
 .progress {
     position: relative;
     height: 25px;
-    margin-bottom: 4px;
+    margin: 0px 30px 30px 30px;
 }
 
 .progress-bar {
     background-color: #72e7ed;
+
 }
 
 .cv-download {
     text-align: center;
     padding: 30px;
+}
+
+#circle-container{
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: url("../images/_hawa.png") no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*------------------------------------------------Projects-----------*/
@@ -160,7 +212,7 @@ header {
 }
 
 .bg-color-projects {
-    background-color: #c7d4d4;ß
+    background-color: #c8dada;
 }
 
 
@@ -204,14 +256,14 @@ footer {
 .contact-heading {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
 .contact-heading {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
-    margin-top: 35px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -223,4 +275,10 @@ footer {
 
 .bg-color-contact {
     background-color: #c7d4d4;
+}
+
+@media screen and (max-width: 800px){
+  #photo{
+    column-count: 2;
+  }
 }
